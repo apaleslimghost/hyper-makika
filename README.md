@@ -1,13 +1,15 @@
-# hyperterm-monokai
+# hyper-makika
 
-> Monokai theme for [HyperTerm](https://hyperterm.org)
+> Makika theme for [Hyper.app](https://hyper.is)
 
 ![](screenshot.png)
 
 ## Install
 
-Add `hyperterm-monokai` to the plugins list in your `~/.hyperterm.js` config file.
+Add `hyper-makika` to the plugins list in your `~/.hyper.js` config file.
 
 ## License
 
-MIT © [Badr Chaouai](http://arkhamdev.com)
+ISC © Matt Brennan
+
+Based on [hyperterm-monokai](https://github.com/arkhamdev/hyperterm-monokai) by [Badr Chaouai](http://arkhamdev.com/)

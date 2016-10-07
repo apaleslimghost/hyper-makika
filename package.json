@@ -2,7 +2,7 @@
   "name": "hyper-makika",
   "version": "1.0.0-1",
   "description": "makika theme for hyper.app",
-  "license": "MIT",
+  "license": "ISC",
   "repository": "quarterto/hyper-makika.git",
   "files": [
     "index.js"
