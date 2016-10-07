@@ -1,27 +1,27 @@
 'use strict';
-const colors = require('material-colors');
+const material = require('material-colors');
 const chroma = require('chroma-js');
 
-const backgroundColor = colors.grey['900'];
-const foregroundColor = chroma.mix(colors.grey['50'], colors.blueGrey['50']);
+const backgroundColor = material.grey['900'];
+const foregroundColor = chroma.mix(material.grey['50'], material.blueGrey['50']);
 
 const colors = {
       black: backgroundColor,
-      red: colors.red['400'],
-      green: colors.lime.a400,
-      yellow: colors.amber['200'],
-      blue: colors.lightBlue['400'],
-      magenta: colors.pink['400'],
-      cyan: colors.teal.a400,
+      red: material.red['400'],
+      green: material.lime.a400,
+      yellow: material.amber['200'],
+      blue: material.lightBlue['400'],
+      magenta: material.pink['400'],
+      cyan: material.teal.a400,
       white: foregroundColor,
-      lightBlack: colors.blueGrey['600'],
-      lightRed: colors.red.a200,
-      lightGreen: colors.lightGreen.a200,
-      lightYellow: colors.amber.a100,
-      lightBlue: colors.lightBlue.a200,
-      lightMagenta: colors.pink.a200,
-      lightCyan: colors.teal.a200,
-      lightWhite: colors.white,
+      lightBlack: material.blueGrey['600'],
+      lightRed: material.red.a200,
+      lightGreen: material.lightGreen.a200,
+      lightYellow: material.amber.a100,
+      lightBlue: material.lightBlue.a200,
+      lightMagenta: material.pink.a200,
+      lightCyan: material.teal.a200,
+      lightWhite: material.white,
 };
 
 exports.decorateConfig = (config) => (
