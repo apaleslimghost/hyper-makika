@@ -3,7 +3,7 @@ const material = require('material-colors');
 const chroma = require('chroma-js');
 
 const backgroundColor = material.grey['900'];
-const foregroundColor = chroma.mix(material.grey['50'], material.blueGrey['50']);
+const foregroundColor = chroma.mix(material.grey['50'], material.blueGrey['50']).hex();
 
 const colors = {
       black: backgroundColor,
