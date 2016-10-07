@@ -1,14 +1,18 @@
 {
-  "name": "hyperterm-monokai",
+  "name": "hyper-makika",
   "version": "0.1.0",
-  "description": "a monokai theme for Hyperterm",
+  "description": "makika theme for hyper.app",
   "license": "MIT",
-  "repository": "arkhamdev/hyperterm-monokai.git",
+  "repository": "quarterto/hyper-makika.git",
   "files": [
     "index.js"
   ],
   "keywords": [
     "hyperterm",
     "hyperterm-theme"
-  ]
+  ],
+  "dependencies": {
+    "chroma-js": "^1.2.1",
+    "material-colors": "^1.1.1"
+  }
 }

@@ -1,26 +1,28 @@
 'use strict';
-const backgroundColor = '#282828';
-const foregroundColor = '#F8F8F0';
+const colors = require('material-colors');
+const chroma = require('chroma-js');
 
-const colors = [
-  backgroundColor,
-  '#F92672', // pink
-  '#A6E22E', // green
-  '#FD971F', // orange
-  '#AE81FF', // purple
-  '#66D9EF', // blue
-  '#38CCD1', // cyan
-  '#ffffff', // white
-  '#49483E', // brown gray
-  '#F92672', // pink
-  '#A6E22E', // green
-  '#FD971F', // orange
-  '#AE81FF', // purple
-  '#66D9EF', // blue
-  '#38CCD1', // cyan
-  '#ffffff', // white
-  foregroundColor
-];
+const backgroundColor = colors.grey['900'];
+const foregroundColor = chroma.mix(colors.grey['50'], colors.blueGrey['50']);
+
+const colors = {
+      black: backgroundColor,
+      red: colors.red['400'],
+      green: colors.lime.a400,
+      yellow: colors.amber['200'],
+      blue: colors.lightBlue['400'],
+      magenta: colors.pink['400'],
+      cyan: colors.teal.a400,
+      white: foregroundColor,
+      lightBlack: colors.blueGrey['600'],
+      lightRed: colors.red.a200,
+      lightGreen: colors.lightGreen.a200,
+      lightYellow: colors.amber.a100,
+      lightBlue: colors.lightBlue.a200,
+      lightMagenta: colors.pink.a200,
+      lightCyan: colors.teal.a200,
+      lightWhite: colors.white,
+};
 
 exports.decorateConfig = (config) => (
   Object.assign({}, config, {
@@ -33,9 +35,6 @@ exports.decorateConfig = (config) => (
       .tab_tab {
         color: ${foregroundColor} !important;
         background-color: ${backgroundColor} !important;
-      }
-      .tab_active:before {
-        border-bottom-color: #E6DB74 !important;
       }
     `
   })
